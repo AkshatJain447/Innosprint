@@ -112,9 +112,6 @@ body {
     background-size: 100% 100%;
 }
 
-/* From uiverse.io by @satyamchaudharydev */
-/* removing default style of button */
-
 .form button {
     border: none;
     background: none;
@@ -124,7 +121,7 @@ body {
 /* styling of whole input container */
 .form {
     position: relative;
-    left: 30vw;
+    left: 40vw;
     --timing: 0.3s;
     --width-of-input: 200px;
     --height-of-input: 40px;
@@ -190,8 +187,6 @@ input:focus {
     transform: scale(1);
 }
 
-/* styling of close button */
-/* == you can click the close button to remove text == */
 .reset {
     border: none;
     background: none;
@@ -212,27 +207,54 @@ input:not(:placeholder-shown)~.reset {
 }
 
 main {
-    /* display: flex;
-    flex-direction: column;
-    align-items: end;
-    justify-content: end; */
     font-family: 'Baloo Bhai 2';
     position: relative;
     top: 20px;
     width: 80%;
     margin: auto;
-    /* border: 1px solid black; */
 }
 
-main div h1 {
+h1 {
+    width: 80%;
     position: relative;
-    left: 12px;
+    left: 160px;
     text-align: center;
     text-shadow: 1px 1px 2px rgba(171, 167, 167, 0.914);
 }
 
+.vl{
+    border-left: 2px solid black;
+    height: 95%;
+    position: absolute;
+    left: 35%;
+    margin-left: -3px;
+    top: 20px;
+}
+
+.hl{
+    border-top: 2px solid black;
+    width: 1150px;
+    position: absolute;
+    left:3%;
+    margin-left: -3px;
+    top: 70px;
+}
+
+.vl1{
+    border-left: 2px solid black;
+    height: 95%;
+    position: absolute;
+    left: 65%;
+    margin-left: -3px;
+    top: 20px;
+}
+
+td:first-child, th:first-child {
+    border-left: none;
+}
+
 .mainTable {
-    /* border: 1px solid black; */
+    width: 100%;
 }
 
 .mainTable thead th {
@@ -255,7 +277,7 @@ table tbody tr {
 
 table {
     padding: 10px;
-    border: 1px solid white;
+    border: 2px solid black;
     background-color: rgba(255, 255, 255, 0.432);
     box-shadow: 1px 1px 2px rgba(128, 128, 128, 0.447);
     border-radius: 20px;
@@ -263,7 +285,7 @@ table {
     border-collapse: separate !important;
     position: relative;
     top: 1vh;
-    left: 5vw;
+    /* left: 5vw; */
 }
 
 .button {
@@ -271,7 +293,7 @@ table {
     justify-content: center;
     align-items: center;
     position: relative;
-    left: 300px;
+    left: 450px;
     width: 120px;
     height: 40px;
     gap: 10px;
